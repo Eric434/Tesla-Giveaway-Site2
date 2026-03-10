@@ -39,17 +39,17 @@ export function RegistrationForm() {
       <motion.div 
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="glass-panel p-8 md:p-12 text-center rounded-lg border-l-4 border-l-white/20"
+        className="glass-panel p-8 md:p-12 text-center rounded-lg border-l-4 border-l-accent"
       >
-        <h3 className="text-3xl font-sans font-light text-white mb-4">
+        <h3 className="text-3xl font-display font-light text-white mb-4">
           ENTRY CONFIRMED
         </h3>
         <p className="text-muted-foreground font-light text-lg mb-8 leading-relaxed">
-          Your registration for the Tesla giveaway has been secured. Keep an eye on your inbox.
+          Your registration for the Model S giveaway has been secured. Keep an eye on your inbox.
         </p>
         <button 
           onClick={() => setIsSuccess(false)}
-          className="text-sm font-sans tracking-widest text-white/50 hover:text-white transition-colors uppercase"
+          className="text-sm font-display tracking-widest text-white/50 hover:text-white transition-colors uppercase"
         >
           Submit another entry
         </button>
@@ -71,12 +71,12 @@ export function RegistrationForm() {
           />
           <label 
             htmlFor="name" 
-            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-sans uppercase tracking-wider"
+            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-display uppercase tracking-wider"
           >
             Full Name
           </label>
           {errors.name && (
-            <p className="text-red-500 text-sm mt-2">{errors.name.message}</p>
+            <p className="text-accent text-sm mt-2">{errors.name.message}</p>
           )}
         </div>
 
@@ -91,12 +91,12 @@ export function RegistrationForm() {
           />
           <label 
             htmlFor="email" 
-            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-sans uppercase tracking-wider"
+            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-display uppercase tracking-wider"
           >
             Email Address
           </label>
           {errors.email && (
-            <p className="text-red-500 text-sm mt-2">{errors.email.message}</p>
+            <p className="text-accent text-sm mt-2">{errors.email.message}</p>
           )}
         </div>
 
@@ -111,12 +111,12 @@ export function RegistrationForm() {
           />
           <label 
             htmlFor="phone" 
-            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-sans uppercase tracking-wider"
+            className="absolute left-0 top-3 text-white/50 transition-all duration-300 peer-focus:-top-4 peer-focus:text-xs peer-focus:text-white peer-not-placeholder-shown:-top-4 peer-not-placeholder-shown:text-xs peer-not-placeholder-shown:text-white font-display uppercase tracking-wider"
           >
             Phone Number (Optional)
           </label>
           {errors.phone && (
-            <p className="text-red-500 text-sm mt-2">{errors.phone.message}</p>
+            <p className="text-accent text-sm mt-2">{errors.phone.message}</p>
           )}
         </div>
       </div>
